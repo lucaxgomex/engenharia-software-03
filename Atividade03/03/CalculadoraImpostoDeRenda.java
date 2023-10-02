@@ -5,16 +5,24 @@ public class CalculadoraImpostoDeRenda {
         double rendaTotal = rendimentos.stream().mapToDouble(Double::doubleValue).sum();
         double despesaTotal = despesas.stream().mapToDouble(Double::doubleValue).sum();
         double baseCalculo = rendaTotal - despesaTotal;
-    
-        if (baseCalculo <= 1903.98) {
+        
+        // Valores atualizados de acordo com a tabela do IR 2023
+        if (baseCalculo <= 2112) {
             return 0.0;
         }
 
-        if (baseCalculo <= 2826.65) {
-            return baseCalculo * 0.075 - 142.80;
+        if (baseCalculo >= 2112.01 || baseCalculo <= 2826.65) {
+            return baseCalculo * 0.075 - 158.40;
+        }
+
+        if (baseCalculo >= 2826.66 || baseCalculo <= 3751.05) {
+            return baseCalculo * 0.15 - 370.40;
+        }
+
+        if (baseCalculo >= 3751.06 || baseCalculo <= 4664.68) {
+            return baseCalculo * 0.225 - 651.73;
         }
             
-        // E assim por diante, para outros intervalos...
-        return baseCalculo * 0.275 - 869.36; // Para bc acima de 4664.68
+        return baseCalculo * 0.275 - 884.96;
     }
 }

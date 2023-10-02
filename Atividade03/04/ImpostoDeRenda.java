@@ -4,13 +4,15 @@ class ImpostoDeRenda {
     private String cpfContribuinte;
     private List<Double> rendimentos;
     private List<Double> despesas;
-    private ValidacaoImpostoRenda validacoes;
     
-    public ImpostoDeRenda(String cpfContribuinte, List<Double> rendimentos, List<Double> despesas, ValidacaoImpostoRenda validacoes) {
+    public ImpostoDeRenda(String cpfContribuinte, List<Double> rendimentos, List<Double> despesas) {
+        ValidacaoImpostoDeRenda.validarCPF(cpfContribuinte);
+        ValidacaoImpostoDeRenda.validarRendimentos(rendimentos);
+        ValidacaoImpostoDeRenda.validarDespesas(despesas);
+        
         this.cpfContribuinte = cpfContribuinte;
         this.rendimentos = rendimentos;
         this.despesas = despesas;
-        this.validacoes = validacoes;
     }
 
     public String getCpfContribuinte() {
@@ -28,10 +30,6 @@ class ImpostoDeRenda {
     // Execucao de validacao    
 
     public void processar() {
-        validacoes.validarCpf(cpfContribuinte);
-        validacoes.validar(rendimentos);
-        validacoes.validar(despesas);
-    
         CalculadoraImpostoDeRenda calculadora = new CalculadoraImpostoDeRenda();
         
         double impostoDevido = calculadora.calcularImposto(rendimentos, despesas);

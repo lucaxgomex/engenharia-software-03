@@ -1,6 +1,7 @@
+package root;
 import java.util.Date;
-import java.io.FileWriter;
-import java.io.IOException;
+//import java.io.FileWriter;
+//import java.io.IOException;
 
 public class Post {
     private int id;

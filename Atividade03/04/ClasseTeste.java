@@ -12,14 +12,10 @@ public class ClasseTeste {
         despesas.add(1000.0);
         //despesas.add(500.0);
 
-        List<ValidacaoImpostoDeRenda.Validacao> validacoes = new ArrayList<>();
-        validacoes.add(new ValidacaoImpostoDeRenda.validaCPFTamanho());
-        validacoes.add(new ValidacaoImpostoDeRenda.validaRendimentos());
-        validacoes.add(new ValidacaoImpostoDeRenda.validaDespesas());
 
         // Criando um objeto ImpostoDeRenda
         ImpostoDeRenda ir = new ImpostoDeRenda("12345678901", rendimentos, despesas);
-        ir.validar();
+        //ir.validar();
         ir.processar();
     }
 }

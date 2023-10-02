@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class RelatorioImpostoRenda {
     public void gerarRelatorio(ImpostoDeRenda imposto, double calculoImposto) {
         System.out.println("CPF: " + imposto.getCpfContribuinte());

@@ -14,7 +14,7 @@ public class ClasseTeste {
 
         // Criando um objeto ImpostoDeRenda
         ImpostoDeRenda ir = new ImpostoDeRenda("12345678901", rendimentos, despesas);
-        ir.validar();
+       // ir.validar();
         ir.processar();
     }
 }

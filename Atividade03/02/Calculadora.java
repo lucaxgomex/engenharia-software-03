@@ -4,7 +4,7 @@ import java.util.List;
 public class Calculadora {
     private final double a;
     private final double b;
-    private List<Operacao> operacaos;
+    //private List<Operacao> operacaos;
 
     public Calculadora(double a, double b) {
         this.a = a;

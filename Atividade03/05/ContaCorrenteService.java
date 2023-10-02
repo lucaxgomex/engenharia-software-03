@@ -1,3 +1,5 @@
+import java.util.List;
+
 class ContaCorrenteService {
     private List<Transacao> transacoes; // {transacao1, transacao2, transacao3, ...}
     
@@ -6,7 +8,8 @@ class ContaCorrenteService {
     public List<Transacao> filtrarTransacoesInvalidas() {
         // ... implemente a lógica para filtrar transações inválidas
 
-        private List<Transacao> transacoesInvalidas;
+        final List<Transacao> transacoesInvalidas;
+    
         for (List transacao : transacoes) {
             transacoesInvalidas.add(transacao);
         }

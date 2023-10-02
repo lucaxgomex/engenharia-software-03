@@ -1,4 +1,4 @@
-import java.util.List;
+//import java.util.List;
 
 public class RelatorioImpostoRenda {
     public void gerarRelatorio(ImpostoDeRenda imposto, double calculoImposto) {
