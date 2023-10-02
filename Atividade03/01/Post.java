@@ -8,15 +8,16 @@ public class Post {
     private Autor autor;
     private Date data;
     private int quantidadeDeLikes;
-    private String filePath; // Caminho do arquivo - responsabilidade extra
 
-    public Post(int id, String texto, Autor autor, Date data, String filePath) {
+    public Post(int id, String texto, Autor autor) {
         this.id = id;
         this.texto = texto;
         this.autor = autor;
-        this.data = new Date(data.getTime());
+        
+        //this.data = new Date(data.getTime());
+        this.data = new Date();
+
         this.quantidadeDeLikes = 0;
-        this.filePath = filePath;
     }
 
     public int getId() {
@@ -37,18 +38,5 @@ public class Post {
 
     public int getQuantidadeDeLikes() {
         return quantidadeDeLikes;
-    }
-
-    // Responsabilidade extra: Manipulação de Arquivo
-    public void saveToFile() {
-        try (FileWriter writer = new FileWriter(filePath)) {
-            writer.write("ID: " + id + "\n");
-            writer.write("Texto: " + texto + "\n");
-            writer.write("Autor: " + autor.getNome() + "\n");
-            writer.write("Data: " + data + "\n");
-            writer.write("Quantidade de Likes: " + quantidadeDeLikes + "\n");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }

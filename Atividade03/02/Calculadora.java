@@ -11,6 +11,19 @@ public class Calculadora {
         this.b = b;
     }
 
+    public List<Double> calcular(List<Operacao> operacoes) {
+        List<Double> resultados = new ArrayList<>();
+
+        for (Operacao operacao : operacoes) {
+            resultados.add(
+                operacao.executar(this.a, this.b)
+            );
+        }
+        return resultados;
+    }
+   
+    
+    /*
     public List<Double> calcular(List<String> operacoes) {
         List<Double> resultados = new ArrayList<>();
         for (String operacao: operacoes) {
@@ -30,10 +43,7 @@ public class Calculadora {
         }
         return resultados;
     }
+    */
 
-    public static void main(String[] args) {
-        Calculadora op = new Calculadora(3, 5);
-    }
 }
 
-//Calculadora clc = Calculadora(3.0, 2.0);

@@ -8,8 +8,8 @@ public class Autor {
         this.nome = nome;
         this.email = email;
     }
+    
     // Métodos de acesso (getters) aqui.
-
     public int getId() {
         return this.id;
     }
