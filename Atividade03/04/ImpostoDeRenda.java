@@ -28,7 +28,6 @@ class ImpostoDeRenda {
     }
     
     // Execucao de validacao    
-
     public void processar() {
         CalculadoraImpostoDeRenda calculadora = new CalculadoraImpostoDeRenda();
         

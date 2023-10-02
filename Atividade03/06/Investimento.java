@@ -1,3 +1,5 @@
+import data.TipoInvestimento;
+
 class Investimento {
     private int id;
     private double valor;

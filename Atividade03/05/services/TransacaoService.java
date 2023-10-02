@@ -1,4 +1,8 @@
-class TransacaoService {
+package services;
+
+import root.Transacao;
+
+public class TransacaoService {
     private Transacao transacao;
     private boolean isFraudulenta;
 

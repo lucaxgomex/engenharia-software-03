@@ -1,3 +1,5 @@
+import root.Transacao;
+
 class ContaCorrenteService {
     private List<Transacao> transacoes; // {transacao1, transacao2, transacao3, ...}
     

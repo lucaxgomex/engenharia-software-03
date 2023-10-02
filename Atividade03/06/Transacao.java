@@ -1,3 +1,5 @@
+import data.TipoTransacao;
+
 class Transacao {
     private int id;
     private double valor;

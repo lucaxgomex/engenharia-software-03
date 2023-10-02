@@ -1,3 +1,5 @@
+import root.Transacao;
+
 class TransacaoService {
     private Transacao transacao;
     private boolean isFraudulenta;

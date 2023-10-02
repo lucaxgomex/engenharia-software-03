@@ -1,6 +1,8 @@
 import java.util.List;
 
 public class ValidacaoImpostoDeRenda {
+    
+
     public static void validarCPF(String cpf) {
         if (cpf == null || cpf.length() != 11) {
             throw new IllegalArgumentException("O CPF deve ter 11 caracteres.");

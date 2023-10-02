@@ -1,4 +1,8 @@
-class Transacao {
+package root;
+
+import data.TipoTransacao;
+
+public class Transacao {
     private int id;
     private double valor;
     private TipoTransacao tipo;

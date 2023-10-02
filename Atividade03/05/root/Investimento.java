@@ -1,4 +1,7 @@
-class Investimento {
+package root;
+import data.TipoInvestimento;
+
+public class Investimento {
     private int id;
     private double valor;
     private TipoInvestimento tipo;

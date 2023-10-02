@@ -1,4 +1,6 @@
-class ContaCorrente {
+package root;
+
+public class ContaCorrente {
     private String numero;
     private double saldo;
 

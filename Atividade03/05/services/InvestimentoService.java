@@ -1,3 +1,7 @@
+package services;
+
+import root.Investimento;
+
 class InvestimentoService {
     private String statusRisco;
     private Investimento investimento;
