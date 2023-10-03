@@ -1,5 +1,0 @@
-ID: 1
-Texto: Meu primeiro post!
-Autor: Lucas Gomes
-Data: Sat Sep 30 23:41:27 BRT 2023
-Quantidade de Likes: 0

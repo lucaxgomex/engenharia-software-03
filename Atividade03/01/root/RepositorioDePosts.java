@@ -6,9 +6,6 @@ import java.io.IOException;
 
 public class RepositorioDePosts {
     private String filePath;
-    //private Post post;
-    //private Autor autor;
-
     Autor autor = new Autor(1, "Lucas Gomes", "lucasgomes@email.com");
     Post post = new Post(1, "Meu primeiro post!", autor);       
 

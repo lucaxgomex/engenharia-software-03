@@ -13,11 +13,13 @@ class InvestimentoService {
 
         if (tipoInvestimento == TipoInvestimento.RENDA_FIXA) {
             statusRisco = "Baixo risco";
-        } else if (tipoInvestimento == TipoInvestimento.RENDA_VARIAVEL) {
+        } 
+        
+        if (tipoInvestimento == TipoInvestimento.RENDA_VARIAVEL) {
             statusRisco = "Moderado risco";
-        } else {
-            statusRisco = "Tipo de investimento desconhecido";
-        }
+        } 
+            
+        statusRisco = "Tipo de investimento desconhecido";
 
         return statusRisco;
     }
