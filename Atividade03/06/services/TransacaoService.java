@@ -12,12 +12,11 @@ public class TransacaoService {
     public boolean verificarFraude() {
         double media = calcularMedia(transacoesRecentes);
 
-        if (transacao.getValor() > 2 * media) {
-            this.isFraudulenta = true; // A transação é considerada fraudulenta
+        if (valor > 2 * media) {
+            isFraudulenta = true; // A transação é considerada fraudulenta
         }
 
-        this.isFraudulenta = false; // A transação é considerada legítima
-        return isFraudulenta;
+        isFraudulenta = false; // A transação é considerada legítima
     }    
 
     private double calcularMedia(List<Transacao> transacoes) {

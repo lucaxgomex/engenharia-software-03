@@ -1,11 +1,12 @@
-import data.TipoTransacao;
+package root;
+import data.TipoInvestimento;
 
-class Transacao {
+public class Investimento {
     private int id;
     private double valor;
-    private TipoTransacao tipo;
+    private TipoInvestimento tipo;
 
-    public Transacao(int id, double valor, TipoTransacao tipo) {
+    public Investimento(int id, double valor, TipoInvestimento tipo) {
         this.id = id;
         this.valor = valor;
         this.tipo = tipo;
@@ -19,7 +20,7 @@ class Transacao {
         return this.valor;
     }
 
-    public TipoTransacao getTipo() {
+    public TipoInvestimento getTipo() {
         return this.tipo;
     }
 }

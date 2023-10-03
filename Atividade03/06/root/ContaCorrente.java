@@ -1,6 +1,9 @@
-class ContaCorrente {
+package root;
+
+public class ContaCorrente {
     private String numero;
     private double saldo;
+    
 
     public ContaCorrente(String numero, double saldo) {
         this.numero = numero;
