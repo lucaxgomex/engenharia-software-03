@@ -6,7 +6,7 @@ import interfaces.Operacao;
 import operations.*;
 import root.Calculadora;
 
-public class ClasseTeste {
+public class CalculadoraTeste {
     public static void main(String[] args) {
         double a = 10;
         double b = 5;

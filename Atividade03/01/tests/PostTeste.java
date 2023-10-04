@@ -4,13 +4,13 @@ import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.Scanner; 
 
-class ClasseTeste {
+class PostTeste {
     public static void main(String[] args) {
         try {
-            RepositorioDePosts repo = new RepositorioDePosts("01/tests/files/repo.txt");
+            RepositorioDePosts repo = new RepositorioDePosts("01/tests/repo.txt");
             repo.saveToFile();
             
-            File myObj = new File("repo.txt");            
+            File myObj = new File("01/tests/repo.txt");            
             
             Scanner reader = new Scanner(myObj);
             

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClasseTeste {
+public class IRTeste {
     public static void main(String[] args) {
         // Criando listas de rendimentos e despesas
         List<Double> rendimentos = new ArrayList<>();

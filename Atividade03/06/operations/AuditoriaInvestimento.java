@@ -1,12 +1,13 @@
 package operations;
 
 import java.util.List;
-
 import data.TipoInvestimento;
 import root.Investimento;
+import interfaceexec.Execucao;
 
-public class AuditoriaInvestimentos {
-    public void auditoriaInvestimentos(List<Investimento> investimentos) {
+public class AuditoriaInvestimento implements Execucao<Investimento> {
+    @Override
+    public void executar(List<Investimento> investimentos) {
         for (Investimento investimento : investimentos) {
             int idInvestimento = investimento.getId();
             double valorInvestimento = investimento.getValor();

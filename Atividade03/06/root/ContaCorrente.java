@@ -1,6 +1,6 @@
 package root;
 
-import java.util.List;
+//import java.util.List;
 
 public class ContaCorrente {
     private String numero;

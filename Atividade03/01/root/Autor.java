@@ -11,7 +11,6 @@ public class Autor {
         this.email = email;
     }
     
-    // Métodos de acesso (getters) aqui.
     public int getId() {
         return this.id;
     }

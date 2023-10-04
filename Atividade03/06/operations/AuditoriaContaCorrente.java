@@ -2,7 +2,7 @@ package operations;
 
 import java.util.List;
 import root.ContaCorrente;
-import interfaces.Execucao;
+import interfaceexec.Execucao;
 
 public class AuditoriaContaCorrente implements Execucao<ContaCorrente> {
     @Override
