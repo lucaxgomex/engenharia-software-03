@@ -1,0 +1,4 @@
+interface AnimalVoador {
+    void voar();
+}
+

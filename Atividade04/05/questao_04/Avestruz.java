@@ -1,0 +1,1 @@
+class Avestruz extends Ave { }

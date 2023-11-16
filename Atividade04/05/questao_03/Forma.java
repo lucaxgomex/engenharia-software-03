@@ -1,0 +1,3 @@
+interface Forma {
+    int calcularArea();
+}
